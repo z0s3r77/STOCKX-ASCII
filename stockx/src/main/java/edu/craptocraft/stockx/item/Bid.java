@@ -3,31 +3,28 @@ package edu.craptocraft.stockx.item;
 public class Bid implements Offer {
 
     private String size;
-    private Integer bid;
+    private Integer value;
 
     public Bid(String size, Integer bid){
 
-        this.bid = bid;
+        this.value = bid;
         this.size = size;
 
     }
 
     @Override
     public String size() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.size;
     }
 
     @Override
     public int value() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.value;
     }
 
     @Override
     public int compareTo(Offer oferta) {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.compareTo(oferta);
     }
     
 }
