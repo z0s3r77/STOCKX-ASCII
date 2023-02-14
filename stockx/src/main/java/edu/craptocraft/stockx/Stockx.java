@@ -1,5 +1,6 @@
 package edu.craptocraft.stockx;
 
+import edu.craptocraft.stockx.item.Ask;
 import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Item;
 import edu.craptocraft.stockx.item.Sneaker;
@@ -64,15 +65,15 @@ import edu.craptocraft.stockx.item.Sneaker;
         sneaker.add(new Ask("9.5", 340));
         sneaker.add(new Ask("13", 330));
 
-        // /**
-        //  * Crear el filtro "Bids" que filtra
-        //  * solo las bids de entre las 
-        //  * offers de la zapatilla. 
-        //  */
+        /**
+         * Crear el filtro "Bids" que filtra
+         * solo las bids de entre las 
+         * offers de la zapatilla. 
+         */
 
-        // Criteria bids = new Bids();
-        // System.out.println("\n\t\t All BIDS");
-        // bids.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria bids = new Bids();
+        System.out.println("\n\t\t All BIDS");
+        bids.checkCriteria(sneaker).forEach(System.out::print);
 
         // /**
         //  * Crea el filtro "Asks" que filtra
