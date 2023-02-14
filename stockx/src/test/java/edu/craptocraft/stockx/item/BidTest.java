@@ -18,7 +18,6 @@ public class BidTest {
     
     }
 
-    
     @Test public void constructorTest(){
 
         assertNotNull(bid);
@@ -32,4 +31,13 @@ public class BidTest {
         assertEquals(550, bid.value());
     }
 
+    @Test public void compareToTest(){
+
+        Bid bid2 = new Bid("20", 280);
+        assertEquals(1, bid.compareTo(bid2));
+
+        Bid bid3 = new Bid("13", 560);
+        assertEquals(-1, bid.compareTo(bid3));
+
+    }
 }
