@@ -44,4 +44,10 @@ public class AskTest {
 
     }
 
+    @Test public void toStringTest(){
+
+        String result = "\t\t"+ask.size()+"\t"+ask.value()+"\n";
+        assertEquals(result, ask.toString());
+
+    }
 }

@@ -24,6 +24,11 @@ public class Ask implements Offer {
         return this.value.compareTo(oferta.value());
     }
 
-
+    @Override
+    public String toString() {
+        StringBuilder offer = new StringBuilder();
+        offer.append("\t\t"+this.size()+"\t"+this.value()+"\n");
+        return offer.toString();
+    }
 
 }

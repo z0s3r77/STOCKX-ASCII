@@ -40,4 +40,11 @@ public class BidTest {
         assertEquals(-1, bid.compareTo(bid3));
 
     }
+
+    @Test public void toStringTest(){
+
+        String result = "\t\t"+bid.size()+"\t"+bid.value()+"\n";
+        assertEquals(result, bid.toString());
+
+    }
 }
