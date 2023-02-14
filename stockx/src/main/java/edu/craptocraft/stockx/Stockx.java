@@ -1,5 +1,7 @@
 package edu.craptocraft.stockx;
 
+import edu.craptocraft.stockx.criteria.Bids;
+import edu.craptocraft.stockx.criteria.Criteria;
 import edu.craptocraft.stockx.item.Ask;
 import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Item;
@@ -75,15 +77,15 @@ import edu.craptocraft.stockx.item.Sneaker;
         System.out.println("\n\t\t All BIDS");
         bids.checkCriteria(sneaker).forEach(System.out::print);
 
-        // /**
-        //  * Crea el filtro "Asks" que filtra
-        //  * solo las asks de entre las
-        //  * offers de la zapatilla. 
-        //  */
+        /**
+         * Crea el filtro "Asks" que filtra
+         * solo las asks de entre las
+         * offers de la zapatilla. 
+         */
 
-        // Criteria asks = new Asks();
-        // System.out.println("\n\t\t All ASKS");
-        // asks.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria asks = new Asks();
+        System.out.println("\n\t\t All ASKS");
+        asks.checkCriteria(sneaker).forEach(System.out::print);
 
         // /**
         //  * Muestra la bid maxima
