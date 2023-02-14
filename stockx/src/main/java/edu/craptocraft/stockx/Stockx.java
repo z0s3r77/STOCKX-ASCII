@@ -1,5 +1,7 @@
 package edu.craptocraft.stockx;
 
+import edu.craptocraft.stockx.item.Item;
+import edu.craptocraft.stockx.item.Sneaker;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo
