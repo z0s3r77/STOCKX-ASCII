@@ -1,11 +1,14 @@
 package edu.craptocraft.stockx.item;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sneaker implements Item {
     
     private String style;
     private String name;
+    private List<Offer> offers = new ArrayList<Offer>();
 
     public Sneaker(String style, String name){
         
@@ -43,14 +46,13 @@ public class Sneaker implements Item {
 
     @Override
     public void add(Offer oferta) {
-        // TODO Auto-generated method stub
+        this.offers.add(oferta);
         
     }
 
     @Override
     public List<Offer> offers() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.offers;
     }
 
     @Override

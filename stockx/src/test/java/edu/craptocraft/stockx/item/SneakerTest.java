@@ -33,4 +33,18 @@ public class SneakerTest {
 
     }
 
+    @Test public void addTest(){
+
+        item.add(new Bid("13", 550));
+        item.add(new Bid("6", 200));
+        item.add(new Bid("9.5", 479));
+        item.add(new Bid("13", 338));
+        item.add(new Bid("9.5", 480));
+
+        assertEquals(5, item.offers().size());
+        
+
+    }
+
+
 }

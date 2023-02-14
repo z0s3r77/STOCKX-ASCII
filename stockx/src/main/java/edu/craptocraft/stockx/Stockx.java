@@ -1,5 +1,6 @@
 package edu.craptocraft.stockx;
 
+import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Item;
 import edu.craptocraft.stockx.item.Sneaker;
 
@@ -43,12 +44,12 @@ import edu.craptocraft.stockx.item.Sneaker;
          * en sus offers.
          */
 
-        // Bid bid = new Bid("13", 550);
-        // sneaker.add(bid);
-        // sneaker.add(new Bid("6", 200));
-        // sneaker.add(new Bid("9.5", 479));
-        // sneaker.add(new Bid("13", 338));
-        // sneaker.add(new Bid("9.5", 480));
+        Bid bid = new Bid("13", 550);
+        sneaker.add(bid);
+        sneaker.add(new Bid("6", 200));
+        sneaker.add(new Bid("9.5", 479));
+        sneaker.add(new Bid("13", 338));
+        sneaker.add(new Bid("9.5", 480));
 
         // /**
         //  * Crear asks
