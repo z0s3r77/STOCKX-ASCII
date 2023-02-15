@@ -1,6 +1,7 @@
 package edu.craptocraft.stockx.criteria;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import edu.craptocraft.stockx.item.Item;
 import edu.craptocraft.stockx.item.Offer;
@@ -23,7 +24,7 @@ public class AndCriteria implements Criteria {
 
         List<Offer> result = this.criteria.checkCriteria(item).stream()
                                                                 .filter(offer -> this.otherCriteria.checkCriteria(item).contains(offer))
-                                                                .toList();
+                                                                .collect(Collectors.toList());
 
         return result.isEmpty() ? List.of() : result;
 
