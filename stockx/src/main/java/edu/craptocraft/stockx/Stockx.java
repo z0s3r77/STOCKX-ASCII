@@ -11,6 +11,7 @@ import edu.craptocraft.stockx.item.Ask;
 import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Item;
 import edu.craptocraft.stockx.item.Offer;
+import edu.craptocraft.stockx.item.Sale;
 import edu.craptocraft.stockx.item.Sneaker;
 
 /**
@@ -137,12 +138,12 @@ import edu.craptocraft.stockx.item.Sneaker;
          * a mas reciente.
          */
 
-        // Sale sale = new Sale("6", 356);
-        // sneaker.add(sale);
-        // sneaker.add(new Sale("9.5", 352));
-        // sneaker.add(new Sale("9.5", 404));
-        // sneaker.add(new Sale("13", 360));
-        // sneaker.add(new Sale("13", 372));
+        Sale sale = new Sale("6", 356);
+        sneaker.add(sale);
+        sneaker.add(new Sale("9.5", 352));
+        sneaker.add(new Sale("9.5", 404));
+        sneaker.add(new Sale("13", 360));
+        sneaker.add(new Sale("13", 372));
 
         // /**
         //  * Crear el filtro "Sales" que filtra
