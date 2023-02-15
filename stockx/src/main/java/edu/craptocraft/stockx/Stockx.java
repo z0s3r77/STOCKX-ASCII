@@ -6,6 +6,7 @@ import edu.craptocraft.stockx.criteria.Asks;
 import edu.craptocraft.stockx.criteria.Bids;
 import edu.craptocraft.stockx.criteria.Criteria;
 import edu.craptocraft.stockx.criteria.MaxBid;
+import edu.craptocraft.stockx.criteria.MinAsk;
 import edu.craptocraft.stockx.item.Ask;
 import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Item;
@@ -128,13 +129,13 @@ import edu.craptocraft.stockx.item.Sneaker;
         sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
         System.out.println(Stockx.draw(sneaker));
 
-        // /**
-        //  * Añade ventas (sales) de 
-        //  * una zapatilla a sus offers.
-        //  * Las ventas se añaden segun fecha
-        //  * en la que se producen, de mas antigua
-        //  * a mas reciente.
-        //  */
+        /**
+         * Añade ventas (sales) de 
+         * una zapatilla a sus offers.
+         * Las ventas se añaden segun fecha
+         * en la que se producen, de mas antigua
+         * a mas reciente.
+         */
 
         // Sale sale = new Sale("6", 356);
         // sneaker.add(sale);
