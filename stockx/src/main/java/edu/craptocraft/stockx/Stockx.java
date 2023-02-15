@@ -9,6 +9,7 @@ import edu.craptocraft.stockx.criteria.Criteria;
 import edu.craptocraft.stockx.criteria.LastSale;
 import edu.craptocraft.stockx.criteria.Max;
 import edu.craptocraft.stockx.criteria.MaxBid;
+import edu.craptocraft.stockx.criteria.Min;
 import edu.craptocraft.stockx.criteria.MinAsk;
 import edu.craptocraft.stockx.criteria.Sales;
 import edu.craptocraft.stockx.criteria.Size;
@@ -222,26 +223,26 @@ import edu.craptocraft.stockx.item.Sneaker;
         sneaker.setBid(sizeBid.isEmpty()? 0 : sizeBid.get(0).value());
         System.out.println("\n\t\t MAX BID 9.5 US: " + sneaker.getBid());
 
-        // /**
-        //  * Crea un filtro Min(size, asks)
-        //  * que devuelva el minimo de las asks
-        //  * de una talla.
-        //  */
+        /**
+         * Crea un filtro Min(size, asks)
+         * que devuelva el minimo de las asks
+         * de una talla.
+         */
 
-        // Criteria sizeMinAsk = new Min(size, asks);
-        // List<Offer> sizeAsk = sizeMinAsk.checkCriteria(sneaker);
-        // sneaker.setAsk(sizeAsk.isEmpty()? 0 : sizeAsk.get(0).value());
-        // System.out.println("\n\t\t MIN ASK 9.5 US: " + sneaker.getAsk());
+        Criteria sizeMinAsk = new Min(size, asks);
+        List<Offer> sizeAsk = sizeMinAsk.checkCriteria(sneaker);
+        sneaker.setAsk(sizeAsk.isEmpty()? 0 : sizeAsk.get(0).value());
+        System.out.println("\n\t\t MIN ASK 9.5 US: " + sneaker.getAsk());
 
-        // /**
-        //  * Mostrar info de la zapatilla 
-        //  * en la talla 9.5
-        //  * - ultima venta
-        //  * - minima ask
-        //  * - maxima bid
-        //  */
+        /**
+         * Mostrar info de la zapatilla 
+         * en la talla 9.5
+         * - ultima venta
+         * - minima ask
+         * - maxima bid
+         */
 
-        // System.out.println(Stockx.draw(sneaker));   
+        System.out.println(Stockx.draw(sneaker));   
 
         // mostrar las listas ordenadas
         
