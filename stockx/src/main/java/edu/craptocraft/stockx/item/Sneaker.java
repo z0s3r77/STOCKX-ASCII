@@ -8,6 +8,10 @@ public class Sneaker implements Item {
     
     private String style;
     private String name;
+    private int sale;
+    private int bid;
+    private int ask;
+
     private List<Offer> offers = new ArrayList<Offer>();
 
     public Sneaker(String style, String name){
@@ -28,20 +32,17 @@ public class Sneaker implements Item {
 
     @Override
     public int getBid() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.bid;
     }
 
     @Override
     public int getAsk() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.ask;
     }
 
     @Override
     public int getSale() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.sale;
     }
 
     @Override
@@ -57,20 +58,20 @@ public class Sneaker implements Item {
 
     @Override
     public void setBid(int bid) {
-        // TODO Auto-generated method stub
-        
+        this.bid = bid;
     }
 
     @Override
     public void setAsk(int ask) {
-        // TODO Auto-generated method stub
         
+        this.ask = ask;
+    
     }
 
     @Override
     public void setSale(int sale) {
-        // TODO Auto-generated method stub
-        
+
+        this.sale = sale;
     }
 
     @Override
