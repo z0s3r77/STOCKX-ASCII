@@ -26,5 +26,12 @@ public class Sale implements Offer{
     public int compareTo(Offer oferta) {
         return this.price.compareTo(oferta.value());
     }
+
+    @Override
+    public String toString() {
+        StringBuilder offer = new StringBuilder();
+        offer.append("\t\t"+this.size()+"\t"+this.value()+"\n");
+        return offer.toString();
+    }
     
 }
