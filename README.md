@@ -20,6 +20,7 @@ Para poder resolver el examen se debía seguir el siguiente diagrama:
 
 ### Patrón de diseño
 Su patrón de diseño es el !["Criteria / Filter pattern"](https://www.tutorialspoint.com/design_pattern/filter_pattern.htm)
+![imagen](https://user-images.githubusercontent.com/80277545/220075427-9ef5710f-c7cb-469e-b67c-80bc07203c45.png)
 
 
 ### Framework
@@ -27,3 +28,12 @@ Su patrón de diseño es el !["Criteria / Filter pattern"](https://www.tutorials
 La propuesta del profesor como framework para estructurar el proyecto fue ![Maven](https://maven.apache.org/what-is-maven.html)
 
 Una vez superadas las historias de usuario, el examen se daba por concluído.
+
+### TDD
+
+Para poder ir resolviendo el examen, debiamos seguir la metodología TDD, __Test Development Driven__ , que se resume en :
+
+  - Escribir casos test para una clase.
+  - Resolver esos casos test construyendo la clase.
+  - Refactorizar c
+
